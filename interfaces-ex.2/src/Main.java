@@ -4,6 +4,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Director director = new Director();
+        Worker worker = new Worker();
+        Accountant accountant = new Accountant();
+
+        director.printPosition();
+        worker.printPosition();
+        accountant.printPosition();
     }
 }
